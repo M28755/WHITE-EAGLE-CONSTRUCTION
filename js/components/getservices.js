@@ -11,10 +11,11 @@ export async function loadServices() {
     }
     //inform assistive technologies that the section is loading
     serviceSection.setAttribute("aria-busy", "true")
+    serviceSection.textContent = "Loading Services..."
 
     try {
 
-        console.log("Loading services...");
+    
 
         //fetch services
         const services = await getServices();
@@ -31,19 +32,15 @@ export async function loadServices() {
             return;
         }
 
-        console.log("Services:", services);
+
 
         //building the cards separately before updateing the DOM
         const fragment = document.createDocumentFragment();
 
         //loop through each service returned by API
         services.forEach((service, index) => {
-            /*   if (!service || typeof service !== "object" || Array.isArray(service)) {
-                  console.warn("Skipping invalid service record:", service)
-                  return;
-              } */
 
-            console.log(service.title)
+                  console.log("Services:", service.title);
 
             //creating the service card
             const serviceCard = document.createElement("article");
@@ -66,7 +63,8 @@ export async function loadServices() {
 
             //TITLE
             const title = typeof service.title === 'string' && service.title.trim() ? service.title.trim() : "Service";
-
+          
+            
             //content wrapper
             const content = document.createElement("div");
 
@@ -95,7 +93,7 @@ export async function loadServices() {
 
             const imageUrl = service.image?.url;
 
-            console.log(imageUrl)
+           console.log(imageUrl)
             if (typeof imageUrl === "string" && imageUrl.trim()) {
                 try {
 
@@ -134,15 +132,9 @@ export async function loadServices() {
 
                 }
             }
-
-
-
-
             //add the card to the document fragment
             fragment.appendChild(serviceCard)
-            console.log(serviceCard)
-
-
+          //  console.log(serviceCard)
         });
 
         //replace old content with the newly created service card

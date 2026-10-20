@@ -1,5 +1,5 @@
 import { getProjects } from './data/projectdata.js'
-import { getMembers } from './components/getTeam.js';
+import { loadMembers } from './components/getTeam.js';
 import { loadServices } from './components/getservices.js';
 
 
@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 loadProjects()
-getMembers()
+loadMembers()
 loadServices()
 // console.log(getProjects)
 async function loadProjects() {
