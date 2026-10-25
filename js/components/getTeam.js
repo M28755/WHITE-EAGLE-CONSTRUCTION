@@ -68,7 +68,7 @@ export async function loadMembers() {
         });
 
         teamSection.append(fragment);
-        console.log('Team Members:', team);
+       // console.log('Team Members:', team);
 
     } catch (error) {
         console.error('Failed to fetch team members:', error.message);

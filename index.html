@@ -26,7 +26,6 @@
 </head>
 
 <body>
-
   <!-- ================================================================= -->
   <!-- NAVIGATION HEADER                                                 -->
   <!-- ================================================================= -->
@@ -37,6 +36,7 @@
         <span class="header-logo-text">W E C</span>
       </div>
 
+      <!-- Navigation Menu -->
       <nav class="header-nav">
         <a class="nav-link active" href="#hero">Home</a>
         <a class="nav-link" href="#about">About</a>
@@ -44,12 +44,23 @@
         <a class="nav-link" href="#projects">Projects</a>
         <a class="nav-link" href="#testimonials">Testimonials</a>
         <a class="nav-link" href="#contact">Contact</a>
+
+        <!--    {/* Optional: Include action button inside mobile menu drawer for mobile UX */}
+      <div class="mobile-header-action">
+        <a class="btn-discuss" href="#contact">Discuss the Project</a>
+      </div> -->
       </nav>
 
       <div class="header-actions">
         <a class="btn-discuss" href="#contact">Discuss the Project</a>
-
       </div>
+
+      <!-- Mobile Menu Hamburger Button -->
+      <button class="menu-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
     </div>
   </header>
 
@@ -58,12 +69,12 @@
       <!-- ==================HERO SECTION -->
       <section class="hero-section" id="hero">
         <div class="hero-backdrop">
-          z-index: 50;
+
           <div class="hero-bg image-slide">
-            <div class="slide active" style="background-image: url(&quot;Photos/image1.jpg&quot;)"></div>
-            <div class="slide" style="background-image: url(&quot;Photos/image2.jpg&quot;)"></div>
-            <div class="slide" style="background-image: url(&quot;Photos/image3.jpg&quot;)"></div>
-            <div class="slide" style="background-image: url(&quot;Photos/image4.jpg&quot;)"></div>
+            <div class="slide active" style="background-image: url(&quot;Photos/Im.jpeg&quot;)"></div>
+            <div class="slide" style="background-image: url(&quot;Photos/h1.jpeg&quot;)"></div>
+            <div class="slide" style="background-image: url(&quot;Photos/h2.jpeg&quot;)"></div>
+            <div class="slide" style="background-image: url(&quot;Photos/h3.jpeg&quot;)"></div>
           </div>
           <div class="overlay-gradient-vertical"></div>
           <div class="overlay-gradient-horizontal"></div>
@@ -118,45 +129,67 @@
 
       <section class="section-padding bg-surface-lowest" id="about">
         <div class="section-container">
+          <!-- About Overview -->
           <div class="about-overview-grid">
             <div class="about-overview-left">
               <div class="section-tag">
-                <span class="dot-mini"></span>
-                01 / White eangle Construction
+                <span class="dot-mini"></span>01 / Our Story
               </div>
-              <h2 class="section-headline">Engineered with absolute permanence.</h2>
+              <h2 class="section-headline">
+                Built on ambition. Driven by a passion for construction.
+              </h2>
             </div>
+
             <div class="about-overview-right"
               style="display: flex; flex-direction: column; gap: 1.5rem; font: var(--font-body-lg); color: var(--color-on-surface-variant); font-weight: 300;">
-              <p>Atelier began at the intersection of geotechnical civil mastery and museum-grade architectural
-                craftsmanship. Founded by master builders and structural theorists trained at ETH Zurich, we resolve
-                site conditions once deemed mathematically inhospitable.</p>
-              <p style="color: var(--color-on-surface);">“Durable, functional, and sculptural built environments
-                engineered to outlast generations, withstand tectonic shifts, and evoke sublime stillness.”</p>
-              <div style="display: flex; align-items: center; gap: 2rem; padding-top: 1rem;">
+              <p>
+                White Eagle Construction began with a simple idea shared by two
+                university students at Kirinyaga University pursuing studies in
+                construction. With a common interest in building, design, and
+                creating lasting structures, they saw an opportunity to turn
+                what they were learning into something meaningful beyond the
+                classroom.
+              </p>
+              <p>
+                What started as conversations about their future in the
+                construction industry grew into a shared ambition to establish
+                White Eagle Construction — a company built around quality,
+                reliability, creativity, and a commitment to doing things right.
+                Their journey reflects the belief that great things can begin
+                with a small idea, a shared vision, and the determination to
+                make it happen.
+              </p>
+              <p style="color: var(--color-on-surface);">
+                "We believe every great structure begins with a vision,
+                grows through teamwork, and stands through quality workmanship."
+              </p>
+              <div style="display: flex; align-items: center; gap: 2rem; padding-top: 1rem; flex-wrap: wrap;">
                 <div>
-                  <div style="font: var(--font-headline-md); color: var(--color-on-surface);">100%</div>
+                  <div style="font: var(--font-headline-md); color: var(--color-on-surface);">01</div>
                   <div
                     style="font: var(--font-label-blueprint); color: var(--color-outline); text-transform: uppercase;">
-                    In-House Structural Safety</div>
+                    Shared Vision</div>
                 </div>
                 <div>
-                  <div style="font: var(--font-headline-md); color: var(--color-primary);">Zero</div>
+                  <div style="font: var(--font-headline-md); color: var(--color-primary);">
+                    Quality
+                  </div>
                   <div
                     style="font: var(--font-label-blueprint); color: var(--color-outline); text-transform: uppercase;">
-                    Structural Failures</div>
+                    In Every Detail </div>
                 </div>
                 <div>
-                  <div style="font: var(--font-headline-md); color: var(--color-secondary);">ISO 14001</div>
+                  <div style="font: var(--font-headline-md); color: var(--color-secondary);">Growth </div>
                   <div
                     style="font: var(--font-label-blueprint); color: var(--color-outline); text-transform: uppercase;">
-                    Low-Carbon Protocol</div>
+                    Built for the Future
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Pillars -->
+          <!-- Our Values -->
           <div class="pillars-grid">
             <div class="pillar-card">
               <div>
@@ -164,17 +197,23 @@
                   <span class="material-symbols-outlined">architecture</span>
                 </div>
                 <span
-                  style="font: var(--font-label-blueprint); color: var(--color-outline); text-transform: uppercase; display: block; margin-bottom: 0.5rem;">Pillar
+                  style="font: var(--font-label-blueprint); color: var(--color-outline); text-transform: uppercase; display: block; margin-bottom: 0.5rem;">Value
                   01</span>
+
                 <h3 style="font: var(--font-headline-sm); color: var(--color-on-surface); margin-bottom: 0.75rem;">
-                  Structural Integrity &amp; Seismic Safety</h3>
-                <p style="font: var(--font-body-sm); color: var(--color-on-surface-variant);">Post-tensioned slabs,
-                  sub-grade rock anchors, and real-time algorithmic deflection modeling designed for seismic resilience.
+                  Quality Workmanship
+                </h3>
+
+                <p style="font: var(--font-body-sm); color: var(--color-on-surface-variant);">
+                  We value careful planning, attention to detail, and quality
+                  workmanship in every project, knowing that the smallest
+                  details can make a lasting difference.
                 </p>
               </div>
+
               <div
                 style="margin-top: 2rem; font: var(--font-label-blueprint); color: var(--color-primary); text-transform: uppercase; display: flex; align-items: center; gap: 0.25rem;">
-                <span>Rigorous Calibration</span>
+                <span>Built with Care</span>
                 <span class="material-symbols-outlined" style="font-size: 16px;">chevron_right</span>
               </div>
             </div>
@@ -182,20 +221,28 @@
             <div class="pillar-card">
               <div>
                 <div class="pillar-icon-wrapper">
-                  <span class="material-symbols-outlined">eco</span>
+                  <span class="material-symbols-outlined">handshake</span>
                 </div>
+
                 <span
-                  style="font: var(--font-label-blueprint); color: var(--color-outline); text-transform: uppercase; display: block; margin-bottom: 0.5rem;">Pillar
-                  02</span>
+                  style="font: var(--font-label-blueprint); color: var(--color-outline); text-transform: uppercase; display: block; margin-bottom: 0.5rem;">
+                  Value 02
+                </span>
+
                 <h3 style="font: var(--font-headline-sm); color: var(--color-on-surface); margin-bottom: 0.75rem;">
-                  Low-Carbon High-Strength Concrete</h3>
-                <p style="font: var(--font-body-sm); color: var(--color-on-surface-variant);">Self-healing bio-cements,
-                  recycled aggregates, and ultra-dense pozzolanic matrixes achieving a 42% embodied carbon reduction.
+                  Trust and Integrity
+                </h3>
+
+                <p style="font: var(--font-body-sm); color: var(--color-on-surface-variant);">
+                  We believe strong construction projects begin with honest
+                  communication, responsible decisions, and relationships
+                  built on trust.
                 </p>
               </div>
+
               <div
                 style="margin-top: 2rem; font: var(--font-label-blueprint); color: var(--color-primary); text-transform: uppercase; display: flex; align-items: center; gap: 0.25rem;">
-                <span>Ecological Spec</span>
+                <span>Trust in Every Step</span>
                 <span class="material-symbols-outlined" style="font-size: 16px;">chevron_right</span>
               </div>
             </div>
@@ -203,19 +250,28 @@
             <div class="pillar-card">
               <div>
                 <div class="pillar-icon-wrapper">
-                  <span class="material-symbols-outlined">schedule</span>
+                  <span class="material-symbols-outlined">groups</span>
                 </div>
+
                 <span
-                  style="font: var(--font-label-blueprint); color: var(--color-outline); text-transform: uppercase; display: block; margin-bottom: 0.5rem;">Pillar
-                  03</span>
+                  style="font: var(--font-label-blueprint); color: var(--color-outline); text-transform: uppercase; display: block; margin-bottom: 0.5rem;">
+                  Value 03
+                </span>
+
                 <h3 style="font: var(--font-headline-sm); color: var(--color-on-surface); margin-bottom: 0.75rem;">
-                  Algorithmic Governance</h3>
-                <p style="font: var(--font-body-sm); color: var(--color-on-surface-variant);">4D BIM scheduling and
-                  drone site photogrammetry yielding zero timeline deviation across 10 years of commissions.</p>
+                  Teamwork and Collaboration
+                </h3>
+
+                <p style="font: var(--font-body-sm); color: var(--color-on-surface-variant);">
+                  Our story began with two students sharing one vision.
+                  That spirit of collaboration continues to shape how we
+                  approach challenges and work toward successful outcomes.
+                </p>
               </div>
+
               <div
                 style="margin-top: 2rem; font: var(--font-label-blueprint); color: var(--color-primary); text-transform: uppercase; display: flex; align-items: center; gap: 0.25rem;">
-                <span>Precision Control</span>
+                <span>Stronger Together</span>
                 <span class="material-symbols-outlined" style="font-size: 16px;">chevron_right</span>
               </div>
             </div>
@@ -223,47 +279,65 @@
             <div class="pillar-card">
               <div>
                 <div class="pillar-icon-wrapper">
-                  <span class="material-symbols-outlined">hardware</span>
+                  <span class="material-symbols-outlined">trending_up</span>
                 </div>
+
                 <span
-                  style="font: var(--font-label-blueprint); color: var(--color-outline); text-transform: uppercase; display: block; margin-bottom: 0.5rem;">Pillar
-                  04</span>
+                  style="font: var(--font-label-blueprint); color: var(--color-outline); text-transform: uppercase; display: block; margin-bottom: 0.5rem;">
+                  Value 04
+                </span>
+
                 <h3 style="font: var(--font-headline-sm); color: var(--color-on-surface); margin-bottom: 0.75rem;">
-                  Master Masonry, Bronze &amp; Glass</h3>
-                <p style="font: var(--font-body-sm); color: var(--color-on-surface-variant);">Hand-chiseled porphyry
-                  stone, custom patinated architectural bronze facades, and triple-laminated oversized glass.</p>
+                  Continuous Learning
+                </h3>
+
+                <p style="font: var(--font-body-sm); color: var(--color-on-surface-variant);">
+                  We embrace new ideas, practical knowledge, and continuous
+                  improvement as we grow our skills and work toward delivering
+                  better construction solutions.
+                </p>
               </div>
+
               <div
                 style="margin-top: 2rem; font: var(--font-label-blueprint); color: var(--color-primary); text-transform: uppercase; display: flex; align-items: center; gap: 0.25rem;">
-                <span>Bespoke Artisanship</span>
+                <span>Always Building Forward</span>
                 <span class="material-symbols-outlined" style="font-size: 16px;">chevron_right</span>
               </div>
             </div>
+
           </div>
 
-          <!-- Principals Grid -->
+          <!-- Founders -->
           <div class="principals-block">
             <div
               style="display: flex; flex-direction: column; justify-content: space-between; margin-bottom: 3rem; gap: 1rem;">
               <div>
                 <span
-                  style="font: var(--font-label-blueprint); color: var(--color-primary); text-transform: uppercase; letter-spacing: 0.15em;">Leadership</span>
-                <h3 style="font: var(--font-headline-lg); color: var(--color-on-surface);">The Master Principals</h3>
+                  style="font: var(--font-label-blueprint); color: var(--color-primary); text-transform: uppercase; letter-spacing: 0.15em;">
+                  Where It All Began
+                </span>
+
+                <h3 style="font: var(--font-headline-lg); color: var(--color-on-surface);">
+                  Two Students. One Vision.
+                </h3>
               </div>
-              <p style="font: var(--font-body-sm); color: var(--color-on-surface-variant); max-width: 28rem;">Every
-                commission is personally steered by one of our three founding partners from geotechnical analysis to
-                final occupancy handover.</p>
+
+              <p style="font: var(--font-body-sm); color: var(--color-on-surface-variant); max-width: 36rem;">
+                Our journey started at Kirinyaga University, where a shared
+                passion for construction inspired two students to think beyond
+                their studies and work toward building something of their own.
+                White Eagle Construction represents that ambition and our
+                commitment to growing into a trusted name in the industry.
+              </p>
             </div>
 
             <div class="principals-grid">
-             
-              
+              <!-- Add the two founders' profiles, names, roles, and photos here. -->
             </div>
           </div>
+
         </div>
       </section>
-
-
       <!-- 3. SERVICES SECTION                                  -->
 
       <section class="section-padding bg-surface-base" id="services">
@@ -314,263 +388,20 @@
 
             <!-- Category Filters -->
             <div class="filter-bar" id="project-filters">
-              <button class="filter-btn active" data-filter="all">All Works <span
-                  style="opacity: 0.7;">(6)</span></button>
-              <button class="filter-btn" data-filter="residential">Residential <span
-                  style="opacity: 0.7;">(0)</span></button>
-              <button class="filter-btn" data-filter="commercial">Commercial <span
-                  style="opacity: 0.7;">(0)</span></button>
-              <button class="filter-btn" data-filter="instutional">Instutional <span
-                  style="opacity: 0.7;">(0)</span></button>
-              <button class="filter-btn" data-filter="renovation">Renovation <span
-                  style="opacity: 0.7;">(0)</span></button>
-              <button class="filter-btn" data-filter="infrastructure">Infrastructure<span
-                  style="opacity: 0.7;">(0)</span></button>
-              <button class="filter-btn" data-filter="industrial">Industrial<span
-                  style="opacity: 0.7;">(0)</span></button>
+              <button class="filter-btn active" data-filter="all">All Works </button>
+              <button class="filter-btn" data-filter="residential">Residential</button>
+              <button class="filter-btn" data-filter="commercial">Commercial</button>
+              <button class="filter-btn" data-filter="instutional">Instutional</span></button>
+              <button class="filter-btn" data-filter="renovation">Renovation</button>
+              <button class="filter-btn" data-filter="infrastructure">Infrastructure</button>
+              <button class="filter-btn" data-filter="industrial">Industrial</button>
             </div>
           </div>
 
           <!-- Projects Grid -->
           <div class="projects-grid" id="project-grid">
-            <!-- Project 1 -->
-            <div class="project-card" data-category="residential">
-              <div class="project-img-container">
-                <img
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQhngOs52b5vhSvl68lLxnvt5DW1Eem4rtGrE4MIT1knSjxhWHw2yax0Y_bAqZvgA1uMrN7Fj3Bg2gokTVAeGlIBZTn06gpsl_JiHo3pjp16zI8DfKMP47UoJ9TjY1V7gjejAVC8NmvpBmxpiPe3CZtf4rLbpc4Fxi3L6068mZOdDdmZEGV1wxc2t6TC7gMujVQc2SwGutVsjFuzhQSa5uzZI8NC0YooTYUjoHN2z1-dpHCJEdPrjP"
-                  alt="Cantilever Villa">
-                <div style="position: absolute; top: 1rem; left: 1rem;">
-                  <span class="service-pill-tag"
-                    style="background-color: rgba(14,14,14,0.8); backdrop-filter: blur(8px); color: var(--color-primary);">Residential</span>
-                </div>
-                <div style="position: absolute; bottom: 1rem; right: 1rem;">
-                  <span class="service-pill-tag"
-                    style="background-color: rgba(14,14,14,0.8); backdrop-filter: blur(8px); color: var(--color-on-surface);">2024</span>
-                </div>
-              </div>
-              <div
-                style="padding: 2rem; display: flex; flex-direction: column; flex: 1; justify-content: space-between;">
-                <div>
-                  <div
-                    style="font: var(--font-label-blueprint); color: var(--color-outline); text-transform: uppercase; margin-bottom: 0.5rem;">
-                    St. Moritz • Switzerland</div>
-                  <h3 style="font: var(--font-headline-md); color: var(--color-on-surface); margin-bottom: 0.75rem;">
-                    Cantilever Alpine Villa</h3>
-                  <p
-                    style="font: var(--font-body-sm); color: var(--color-on-surface-variant); margin-bottom: 1.5rem; font-weight: 300;">
-                    12-meter unpropped cantilever framed in post-tensioned basalt concrete into sheer granite cliff.</p>
-                </div>
-                <div
-                  style="padding-top: 1.5rem; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid var(--color-surface-container);">
-                  <span style="font: var(--font-label-blueprint); color: var(--color-on-surface);">1,450 m² • Civil
-                    Anchor</span>
-                  <button class="btn-circle-arrow" style="border: none; cursor: pointer;"
-                    onclick="openModal('Cantilever Alpine Villa', 'St. Moritz, Switzerland', '2024', '1,450 m²', '12m post-tensioned cantilevers anchored into hard granite bedrock via 34 prestressed tendon ties.', 'Residential Villa')">
-                    <span class="material-symbols-outlined" style="font-size: 18px;">fullscreen</span>
-                  </button>
-                </div>
-              </div>
-            </div>
+            <!-- Project -->
 
-            <!-- Project 2 -->
-            <div class="project-card" data-category="commercial">
-              <div class="project-img-container">
-                <img
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIqKwd1fjdp6u11-3WOuj2us2i3fxB_SXjQwTwMbgko8hrObcfkgD_dsPCjANh2KZ9tW3eTjvSTqI9TH94sc9viIl4m9R-ul2Ex7pVYchiIiqIfx-C3yTJjPY1iCuz_nZ1FUB8ot0g1_P8UJatcUQGrK4xUNyXs7sP9A-D96JxZ_Q-cBszesiSYzxIbx7hbQTBFK7-5SH954JC5sW3Q1hpALP5EOD5LaRXHioy6ccR6V3o5x2WsvTN"
-                  alt="Nordic Monolith">
-                <div style="position: absolute; top: 1rem; left: 1rem;">
-                  <span class="service-pill-tag"
-                    style="background-color: rgba(14,14,14,0.8); backdrop-filter: blur(8px); color: var(--color-primary);">Commercial</span>
-                </div>
-                <div style="position: absolute; bottom: 1rem; right: 1rem;">
-                  <span class="service-pill-tag"
-                    style="background-color: rgba(14,14,14,0.8); backdrop-filter: blur(8px); color: var(--color-on-surface);">2023</span>
-                </div>
-              </div>
-              <div
-                style="padding: 2rem; display: flex; flex-direction: column; flex: 1; justify-content: space-between;">
-                <div>
-                  <div
-                    style="font: var(--font-label-blueprint); color: var(--color-outline); text-transform: uppercase; margin-bottom: 0.5rem;">
-                    Oslo • Norway</div>
-                  <h3 style="font: var(--font-headline-md); color: var(--color-on-surface); margin-bottom: 0.75rem;">
-                    Nordic Monolith Headquarters</h3>
-                  <p
-                    style="font: var(--font-body-sm); color: var(--color-on-surface-variant); margin-bottom: 1.5rem; font-weight: 300;">
-                    Commercial campus constructed with high-thermal mass precast panels and insulated facades.</p>
-                </div>
-                <div
-                  style="padding-top: 1.5rem; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid var(--color-surface-container);">
-                  <span style="font: var(--font-label-blueprint); color: var(--color-on-surface);">14,200 m² • LEED
-                    Platinum</span>
-                  <button class="btn-circle-arrow" style="border: none; cursor: pointer;"
-                    onclick="openModal('Nordic Monolith Headquarters', 'Oslo, Norway', '2023', '14,200 m²', 'Engineered with active geothermal subterranean pile loops reducing heating overhead by 68%.', 'Commercial Campus')">
-                    <span class="material-symbols-outlined" style="font-size: 18px;">fullscreen</span>
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <!-- Project 3 -->
-            <div class="project-card" data-category="civil">
-              <div class="project-img-container">
-                <img
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkWxflo2AbEpIubWDEiObMDLoKi8ZbJEUBpyOF_263sPggGFmhAwSJWLdIRHCRkDELfy5uMqOTdGCsTs5g8_gzUowiDkvZXfcphUuxjg_GCWOWXEvvJzZx5q4-2x1mYDfziYFm8YK5MCTWb2anLw22yr5Ukyg0uRHv7nvLdCOEJLMvWynsXfwlHbO_UVLPsHUyyOXChyr7CI1tRbKeC7wLoD-sPQ7aC81bivZ8ivFcNF6Qa0tOyu32"
-                  alt="Black Rock Foundation">
-                <div style="position: absolute; top: 1rem; left: 1rem;">
-                  <span class="service-pill-tag"
-                    style="background-color: rgba(14,14,14,0.8); backdrop-filter: blur(8px); color: var(--color-secondary);">Civil
-                    Works</span>
-                </div>
-                <div style="position: absolute; bottom: 1rem; right: 1rem;">
-                  <span class="service-pill-tag"
-                    style="background-color: rgba(14,14,14,0.8); backdrop-filter: blur(8px); color: var(--color-on-surface);">2024</span>
-                </div>
-              </div>
-              <div
-                style="padding: 2rem; display: flex; flex-direction: column; flex: 1; justify-content: space-between;">
-                <div>
-                  <div
-                    style="font: var(--font-label-blueprint); color: var(--color-outline); text-transform: uppercase; margin-bottom: 0.5rem;">
-                    Reykjavik • Iceland</div>
-                  <h3 style="font: var(--font-headline-md); color: var(--color-on-surface); margin-bottom: 0.75rem;">
-                    Black Rock Coastal Foundation</h3>
-                  <p
-                    style="font: var(--font-body-sm); color: var(--color-on-surface-variant); margin-bottom: 1.5rem; font-weight: 300;">
-                    Marine-grade sulfate resistant retaining barrier and geotechnical sub-sea foundation for Atlantic
-                    tides.</p>
-                </div>
-                <div
-                  style="padding-top: 1.5rem; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid var(--color-surface-container);">
-                  <span style="font: var(--font-label-blueprint); color: var(--color-on-surface);">320m Sea Wall • C70
-                    Mix</span>
-                  <button class="btn-circle-arrow" style="border: none; cursor: pointer;"
-                    onclick="openModal('Black Rock Coastal Foundation', 'Reykjavik, Iceland', '2024', '320 Linear Meters', 'Engineered to withstand 140kN/m² hydro-dynamic wave impacts with bio-carbonate skin.', 'Marine Civil Works')">
-                    <span class="material-symbols-outlined" style="font-size: 18px;">fullscreen</span>
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <!-- Project 4 -->
-            <div class="project-card" data-category="renovation">
-              <div class="project-img-container">
-                <img
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIlOp5oQ45dMf3n4NO3lGf9-Gy_yD6TnZcVogudGGTEfIuqYKyOigTxQ-FBYMNYglYcLLm1xzlYzRr4IPl3KDYt8JBlpfASMCs0ejUInXPvgDAAQZcFrEWaOpElHHr_bCiQUXgYlII9BuOqhkS24nvHedMc2Buqa374I7qwzWH4V3gXnSJOrnbW3fkRaccYDzodgCnxF-0Tv73XwtTjB1bb3CZW5NztsJ-_QpdsflMAtZle5MgNZHV"
-                  alt="Heritage Transformation">
-                <div style="position: absolute; top: 1rem; left: 1rem;">
-                  <span class="service-pill-tag"
-                    style="background-color: rgba(14,14,14,0.8); backdrop-filter: blur(8px); color: var(--color-primary);">Renovation</span>
-                </div>
-                <div style="position: absolute; bottom: 1rem; right: 1rem;">
-                  <span class="service-pill-tag"
-                    style="background-color: rgba(14,14,14,0.8); backdrop-filter: blur(8px); color: var(--color-on-surface);">2023</span>
-                </div>
-              </div>
-              <div
-                style="padding: 2rem; display: flex; flex-direction: column; flex: 1; justify-content: space-between;">
-                <div>
-                  <div
-                    style="font: var(--font-label-blueprint); color: var(--color-outline); text-transform: uppercase; margin-bottom: 0.5rem;">
-                    London • United Kingdom</div>
-                  <h3 style="font: var(--font-headline-md); color: var(--color-on-surface); margin-bottom: 0.75rem;">
-                    Heritage Warehouse Transformation</h3>
-                  <p
-                    style="font: var(--font-body-sm); color: var(--color-on-surface-variant); margin-bottom: 1.5rem; font-weight: 300;">
-                    Structural exoskeleton underpinning and insertion of a cantilevered architectural bronze gallery.
-                  </p>
-                </div>
-                <div
-                  style="padding-top: 1.5rem; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid var(--color-surface-container);">
-                  <span style="font: var(--font-label-blueprint); color: var(--color-on-surface);">3,800 m² • Grade II
-                    Listed</span>
-                  <button class="btn-circle-arrow" style="border: none; cursor: pointer;"
-                    onclick="openModal('Heritage Warehouse Transformation', 'London, UK', '2023', '3,800 m²', 'Structural insertion of an internal carbon steel core while preserving 1890s brick masonry.', 'Heritage Restoration')">
-                    <span class="material-symbols-outlined" style="font-size: 18px;">fullscreen</span>
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <!-- Project 5 -->
-            <div class="project-card" data-category="residential">
-              <div class="project-img-container">
-                <img
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbao_Qu-zb0Y91J-uL34KyqcKiADfj8h_q26cOFOjFyRT6ROyxUMwxHmZlO65tIjQN8d_5kRuQ5DetCPHyOpWUg0CpMnM87KGcHFzBwnIAr9WPyk26PkJbOH2YVQvN-2dB6HKOVt9Px9wpVD_7FmSw6KrU0myQwtOQAfsrFfKFZpKUINAhumuW98XnHUg_utljfJb7ULiNz3Q-N3bT-XqcdzcVqI89SamFdP_PypPAW-aZEzEk1Tpi"
-                  alt="Concrete Pavilion">
-                <div style="position: absolute; top: 1rem; left: 1rem;">
-                  <span class="service-pill-tag"
-                    style="background-color: rgba(14,14,14,0.8); backdrop-filter: blur(8px); color: var(--color-primary);">Residential</span>
-                </div>
-                <div style="position: absolute; bottom: 1rem; right: 1rem;">
-                  <span class="service-pill-tag"
-                    style="background-color: rgba(14,14,14,0.8); backdrop-filter: blur(8px); color: var(--color-on-surface);">2024</span>
-                </div>
-              </div>
-              <div
-                style="padding: 2rem; display: flex; flex-direction: column; flex: 1; justify-content: space-between;">
-                <div>
-                  <div
-                    style="font: var(--font-label-blueprint); color: var(--color-outline); text-transform: uppercase; margin-bottom: 0.5rem;">
-                    Kyoto • Japan</div>
-                  <h3 style="font: var(--font-headline-md); color: var(--color-on-surface); margin-bottom: 0.75rem;">
-                    Brutalist Concrete Pavilion</h3>
-                  <p
-                    style="font: var(--font-body-sm); color: var(--color-on-surface-variant); margin-bottom: 1.5rem; font-weight: 300;">
-                    Seismically isolated concrete private sanctuary combining board-cast textures with yakisugi
-                    woodwork.</p>
-                </div>
-                <div
-                  style="padding-top: 1.5rem; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid var(--color-surface-container);">
-                  <span style="font: var(--font-label-blueprint); color: var(--color-on-surface);">920 m² • Base
-                    Isolators</span>
-                  <button class="btn-circle-arrow" style="border: none; cursor: pointer;"
-                    onclick="openModal('Brutalist Concrete Pavilion', 'Kyoto, Japan', '2024', '920 m²', 'Constructed with elastomeric seismic base bearings allowing 600mm horizontal ground motion.', 'Residential Pavilion')">
-                    <span class="material-symbols-outlined" style="font-size: 18px;">fullscreen</span>
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <!-- Project 6 -->
-            <div class="project-card" data-category="civil">
-              <div class="project-img-container">
-                <img
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpCVmPmYk8IM4uBbpJ9h10Z2h95DsRriG-_u9_m3Jb_LNp03yqi_qtXkSTUStvtBnn7oXG54UMebhgSDlMGs-KtQGoB2ooIYtDbuBKlTqNJUrXKI9HSUJmKYeUaKBxY2ISr7Ql4m8Q4axDOrBAS8FTK-blh07doL8GsWKjStu1KNs3LDBzEdj3OG2S_qPsOXBKeiwhq3robZuq5k4hNN_XRMKH8aaj3KA0qOStdfNl7BF5jykCfCRZ"
-                  alt="Harbor Viaduct">
-                <div style="position: absolute; top: 1rem; left: 1rem;">
-                  <span class="service-pill-tag"
-                    style="background-color: rgba(14,14,14,0.8); backdrop-filter: blur(8px); color: var(--color-secondary);">Civil
-                    Works</span>
-                </div>
-                <div style="position: absolute; bottom: 1rem; right: 1rem;">
-                  <span class="service-pill-tag"
-                    style="background-color: rgba(14,14,14,0.8); backdrop-filter: blur(8px); color: var(--color-on-surface);">2022</span>
-                </div>
-              </div>
-              <div
-                style="padding: 2rem; display: flex; flex-direction: column; flex: 1; justify-content: space-between;">
-                <div>
-                  <div
-                    style="font: var(--font-label-blueprint); color: var(--color-outline); text-transform: uppercase; margin-bottom: 0.5rem;">
-                    Rotterdam • Netherlands</div>
-                  <h3 style="font: var(--font-headline-md); color: var(--color-on-surface); margin-bottom: 0.75rem;">
-                    Harbor Viaduct &amp; Sea Barrier</h3>
-                  <p
-                    style="font: var(--font-body-sm); color: var(--color-on-surface-variant); margin-bottom: 1.5rem; font-weight: 300;">
-                    Heavy civil infrastructural viaduct integrating flood retention gates and load bearing spans.</p>
-                </div>
-                <div
-                  style="padding-top: 1.5rem; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid var(--color-surface-container);">
-                  <span style="font: var(--font-label-blueprint); color: var(--color-on-surface);">1.8 km • Hydraulic
-                    Gates</span>
-                  <button class="btn-circle-arrow" style="border: none; cursor: pointer;"
-                    onclick="openModal('Harbor Viaduct &amp; Sea Barrier', 'Rotterdam, Netherlands', '2022', '1.8 km Viaduct', 'Deep hydraulic foundation with submerged pre-cast caissons sunk to 26 meters depth.', 'Heavy Infrastructure')">
-                    <span class="material-symbols-outlined" style="font-size: 18px;">fullscreen</span>
-                  </button>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -605,74 +436,7 @@
           </div>
 
           <div class="testimonial-stage">
-            <!-- Slide 0 -->
-            <div class="testimonial-slide opacity-100" data-index="0">
-              <div style="margin-bottom: 2rem;">
-                <span
-                  style="font: var(--font-headline-xl); color: var(--color-primary); font-family: serif; user-select: none; line-height: 1;">“</span>
-                <blockquote
-                  style="font: var(--font-headline-md); color: var(--color-on-surface); font-weight: 300; line-height: 1.6; max-width: 56rem; margin-top: -1rem;">
-                  We build what matters, from ground-breaking to grand opening
-                  with precision engineering and uncompromising quality.
-                </blockquote>
-              </div>
-              <div
-                style="display: flex; flex-direction: column; justify-content: space-between; gap: 1rem; padding-top: 1.5rem; border-top: 1px solid var(--color-surface-container);">
-                <div>
-                  <div style="font: var(--font-headline-sm); color: var(--color-on-surface);">Confucius</div>
-                  <div style="font: var(--font-body-sm); color: var(--color-on-surface-variant);">Philosopher</div>
-                </div>
-                <!--  <div style="font: var(--font-label-blueprint); color: var(--color-primary); text-transform: uppercase;">Project: The Cantilever Pavilion • St. Moritz</div> -->
-              </div>
-            </div>
-
-            <!-- Slide 1 -->
-            <div class="testimonial-slide absolute-slide opacity-0" data-index="1">
-              <div style="margin-bottom: 2rem;">
-                <span
-                  style="font: var(--font-headline-xl); color: var(--color-primary); font-family: serif; user-select: none; line-height: 1;">“</span>
-                <blockquote
-                  style="font: var(--font-headline-md); color: var(--color-on-surface); font-weight: 300; line-height: 1.6; max-width: 56rem; margin-top: -1rem;">
-                  Their geotechnical execution during our subterranean maritime viaduct expansion was surgical. Not a
-                  single hour was lost to unexpected soil conditions thanks to predictive modeling.
-                </blockquote>
-              </div>
-              <div
-                style="display: flex; flex-direction: column; justify-content: space-between; gap: 1rem; padding-top: 1.5rem; border-top: 1px solid var(--color-surface-container);">
-                <div>
-                  <div style="font: var(--font-headline-sm); color: var(--color-on-surface);">Kasper Lindqvist</div>
-                  <div style="font: var(--font-body-sm); color: var(--color-on-surface-variant);">Managing Director •
-                    Nordea Infrastructure Fund (Oslo)</div>
-                </div>
-                <div
-                  style="font: var(--font-label-blueprint); color: var(--color-secondary); text-transform: uppercase;">
-                  Project: Nordic Monolith Campus • Oslo</div>
-              </div>
-            </div>
-
-            <!-- Slide 2 -->
-            <div class="testimonial-slide absolute-slide opacity-0" data-index="2">
-              <div style="margin-bottom: 2rem;">
-                <span
-                  style="font: var(--font-headline-xl); color: var(--color-primary); font-family: serif; user-select: none; line-height: 1;">“</span>
-                <blockquote
-                  style="font: var(--font-headline-md); color: var(--color-on-surface); font-weight: 300; line-height: 1.6; max-width: 56rem; margin-top: -1rem;">
-                  Restoring a Grade-II listed Thames warehouse while hollowing out a subterranean double-height gallery
-                  requires nerves of steel. Atelier executed underpinning with zero crack migration.
-                </blockquote>
-              </div>
-              <div
-                style="display: flex; flex-direction: column; justify-content: space-between; gap: 1rem; padding-top: 1.5rem; border-top: 1px solid var(--color-surface-container);">
-                <div>
-                  <div style="font: var(--font-headline-sm); color: var(--color-on-surface);">Lady Caroline Stanhope
-                  </div>
-                  <div style="font: var(--font-body-sm); color: var(--color-on-surface-variant);">Trustee • Stanhope
-                    Architectural Foundation (London)</div>
-                </div>
-                <div style="font: var(--font-label-blueprint); color: var(--color-primary); text-transform: uppercase;">
-                  Project: Heritage Warehouse • London</div>
-              </div>
-            </div>
+                         
           </div>
 
           <div style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; margin-top: 2rem;">
@@ -753,34 +517,39 @@
                 </p>
               </div>
 
-              <form id="consultation-form" onsubmit="event.preventDefault(); submitForm();">
+              <form id="consultation-form">
 
                 <div class="form-row">
                   <div class="field">
                     <label class="field-label" for="full-name">Full Name / Entity *</label>
-                    <input class="form-input" id="full-name" type="text" placeholder="michael otieno" required>
+                    <input class="form-input" id="full-name" name="fullName" type="text" placeholder="Your full name"
+                      maxlength="100" autocomplete="name" required />
                   </div>
 
                   <div class="field">
                     <label class="field-label" for="email">Official Email *</label>
-                    <input class="form-input" id="email" type="email" placeholder="michael@gmail.com" required>
+                    <input class="form-input" id="email" name="email" type="email" placeholder="you@example.com"
+                      maxlength="254" autocomplete="email" required />
                   </div>
                 </div>
 
                 <div class="form-row">
                   <div class="field">
                     <label class="field-label" for="phone">Direct Phone *</label>
-                    <input class="form-input" id="phone" type="tel" placeholder="+254 70 211 00 00" required>
+                    <input class="form-input" id="phone" name="phone" type="tel" placeholder="+254 7XX XXX XXX"
+                      maxlength="20" autocomplete="tel" required />
                   </div>
 
                   <div class="field">
                     <label class="field-label" for="project-type">Project Discipline *</label>
                     <select class="form-input" id="project-type" required>
                       <option value="" disabled selected>Select Commission Typology</option>
-                      <option value="residential">Bespoke Monolithic Residence</option>
-                      <option value="commercial">Commercial / Institutional Pavilion</option>
-                      <option value="civil">Heavy Civil Infrastructure &amp; Marine</option>
-                      <option value="renovation">Heritage Restoration &amp; Retrofit</option>
+                      <option value="residential">Residential</option>
+                      <option value="commercial">Institutional</option>
+                      <option value="civil">Commercial</option>
+                      <option value="renovation">Renovation</option>
+                      <option value="Industrial">Industrial</option>
+                      <option value="infrastructure">Infrastructure</option>
                     </select>
                   </div>
                 </div>
@@ -789,8 +558,8 @@
                   <div class="field">
                     <label class="field-label" for="budget">Estimated Capital Scope</label>
                     <select class="form-input" id="budget">
-                      <option value="5-15">KES 1OOK – KES 150</option>
-                      <option value="15-40">KES 160K – KES 200</option>
+                      <option value="1000-1500">KES 1000 – KES 1500</option>
+                      <option value="1600-4000">KES 1600 – KES 4000</option>
                       <option value="institutional">Institutional Civil Mandate</option>
                     </select>
                   </div>
@@ -809,10 +578,14 @@
                 </div>
 
                 <div class="consent">
-                  <input id="nda-consent" type="checkbox" required>
+                  <input id="nda-consent" name="privacyConsent" type="checkbox" required />
+
                   <label for="nda-consent">
-                    I request an encrypted Non-Disclosure Agreement (NDA) and authorize Atelier principals
-                    to conduct preliminary satellite geotechnical assessment.
+                    I agree to share the information entered above with
+                    White Eagle Construction through WhatsApp for the purpose
+                    of responding to my project enquiry.
+                    I understand that WhatsApp will open with a pre-filled
+                    message that I can review before sending.
                   </label>
                 </div>
 
@@ -822,8 +595,8 @@
                 </button>
 
                 <p class="privacy-note">
-                  All communications are strictly confidential under Swiss Data &amp; Banking Privacy standards.
-                </p>
+                  Your enquiry will be shared with White Eagle Construction through WhatsApp. Please review your message
+                  before sending. </p>
               </form>
             </div>
 
@@ -885,6 +658,7 @@
     </div>
   </footer>
   <script type="module" src="js/script.js"></script>
+  <script src="js/contact/contact.js"></script>
 
 </body>
 

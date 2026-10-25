@@ -40,7 +40,7 @@ export async function loadServices() {
         //loop through each service returned by API
         services.forEach((service, index) => {
 
-                  console.log("Services:", service.title);
+                 // console.log("Services:", service.title);
 
             //creating the service card
             const serviceCard = document.createElement("article");
@@ -93,7 +93,7 @@ export async function loadServices() {
 
             const imageUrl = service.image?.url;
 
-           console.log(imageUrl)
+           //console.log(imageUrl)
             if (typeof imageUrl === "string" && imageUrl.trim()) {
                 try {
 
