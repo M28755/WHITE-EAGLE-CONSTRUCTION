@@ -23,9 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Start autoplay
   setInterval(nextSlide, slideInterval);
-
-
-
 loadProjects()
 loadMembers()
 loadServices()
@@ -33,9 +30,6 @@ loadTestimonials()
 // console.log(getProjects)
 
 initMobileMenu()
-
-
-
 });
  function initMobileMenu() {
   const header = document.querySelector('.site-header');
@@ -74,7 +68,3 @@ initMobileMenu()
     }
   });
 }
-
-
-
-console.log("Hello , javascript is running without bug")
