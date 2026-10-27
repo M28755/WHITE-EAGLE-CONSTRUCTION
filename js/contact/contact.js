@@ -1,5 +1,3 @@
-
-
 const consultationForm = document.querySelector("#consultation-form");
 
 if (consultationForm) {
@@ -12,7 +10,6 @@ if (consultationForm) {
         const email = document.querySelector("#email").value.trim();
         const phone = document.querySelector("#phone").value.trim();
         const projectType = document.querySelector("#project-type").value;
-        const budget = document.querySelector("#budget").value;
         const siteLocation = document.querySelector("#location").value.trim();
         const message = document.querySelector("#message").value.trim();
         const consent = document.querySelector("#nda-consent").checked;
@@ -52,7 +49,6 @@ if (consultationForm) {
 *Phone:* ${phone}
 
 *Project Type:* ${projectType}
-*Estimated Budget:* ${budget || "Not specified"}
 *Site Location:* ${siteLocation}
 
 *Project Description:*
@@ -64,11 +60,15 @@ _Submitted through the White Eagle Construction website._
         const whatsappURL =
             `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 
+        // Open WhatsApp link
         const newTab = window.open(whatsappURL, "_blank");
         if (newTab) {
             newTab.opener = null;
         } else {
             window.location.href = whatsappURL;
         }
+
+        
+        consultationForm.reset();
     });
 }
